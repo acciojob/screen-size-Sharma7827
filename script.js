@@ -1,4 +1,5 @@
 window.addEventListener('resize', updateScreenSize)
+window.addEventListener('load', updateScreenSize)
 
 function updateScreenSize() {
     const width = window.innerWidth
