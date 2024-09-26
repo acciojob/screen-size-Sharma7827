@@ -7,13 +7,27 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	
 	<div id="sizeInfo">
   <h1>Width: <span id="width"></span> and Height: <span id="height"></span></h1>
 </div>
-    <script type="text/javascript" src="./script.js">
+    
+    
+    
+<script>
+    window.addEventListener('resize', updateScreenSize)
+    window.addEventListener('load', updateScreenSize)
+
+    function updateScreenSize() {
+       const width = window.innerWidth
+       const height = window.innerHeight
+       document.getElementById('width').textContent = width
+       document.getElementById('height').textContent = height
+  }
+
 </script>
 
 </body>
 
 </html>
+
